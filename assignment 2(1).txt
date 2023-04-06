@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+   int intArr[5] = {12, 56, 34, 78, 100};
+   int largest = intArr[0];
+   
+   for(int i=1; i<5; i++) {
+      if(intArr[i] > largest) {
+         largest = intArr[i];
+      }
+   }
+   
+   printf("The largest element of the array is: %d", largest);
+  
+return 0;
+}
